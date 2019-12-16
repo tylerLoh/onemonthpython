@@ -4,7 +4,7 @@ User enter bill amount and suggests few level tip amount to give
 
 Bonus
 -----
-Can accpet dollar($) sign, use str.replace
+Can accept dollar($) sign, use str.replace
 """
 
 print("Welcome to Tip Calculator")
@@ -16,7 +16,7 @@ while True:
 
     bill_amount = input("Enter your bill amount: ")
 
-    # replce dolalr sign
+    # replace dollar sign
     bill_amount = bill_amount.replace("$", '')
     print()
 
@@ -33,5 +33,6 @@ while True:
 tip_level = [15, 18, 20]
 
 print("Bill tip recommendation:")
+# for loop to print diff level of tip
 for level in tip_level:
     print(f"    {level}% = {level / 100 * bill_amount:.1f}")
