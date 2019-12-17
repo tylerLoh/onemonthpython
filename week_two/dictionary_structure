@@ -1,0 +1,28 @@
+""" Dictionary python quick example
+
+Dict is a hashmap
+"""
+
+# state in dict
+states = {
+    'NY': 'New York',
+    'PA': 'Pennsylvania',
+    'CA': 'California'
+}
+
+# key access O(1)
+print(states['NY'])
+
+# get/set O(1) on average, and O(N) amortized worst case.
+print(states.get('NY', None))
+print(states.get('NYY', None))
+
+# print all keys
+print(states.keys())
+
+# print all values
+print(states.values())
+
+# iterable with key value
+for k, v in states.items():
+    print(f"{k} = {v}")
