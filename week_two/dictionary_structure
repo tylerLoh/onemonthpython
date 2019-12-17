@@ -26,3 +26,7 @@ print(states.values())
 # iterable with key value
 for k, v in states.items():
     print(f"{k} = {v}")
+
+# check key in dict
+if 'NY' in states:
+    print('yes')
