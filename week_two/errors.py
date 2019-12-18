@@ -28,14 +28,14 @@ def print_first_word(text):
 
 
 # Prints the last word after popping it off
-def print_last_word(words):
-    word = words.pop()
+def print_last_word(text):
+    word = text.pop()
     print(word)
 
 
 # Prints the first and last words of the sentence
-def print_first_and_last_word(sentence):
-    word = break_words(sentence)
+def print_first_and_last_word(sentences):
+    word = break_words(sentences)
     print_first_word(word)
     print_last_word(word)
 
